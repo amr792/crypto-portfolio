@@ -13,6 +13,12 @@ const Navigation = props => (
 			<LinkContainer to="/portfolio">
 				<NavItem>Portfolio</NavItem>
 			</LinkContainer>
+			<LinkContainer to="/login">
+				<NavItem>Log In</NavItem>
+			</LinkContainer>
+			<LinkContainer to="/signup">
+				<NavItem>Sign Up</NavItem>
+			</LinkContainer>
 		</Nav>
 		<Navbar.Form pullRight>
 			<Search onEnter={() => {}} />
