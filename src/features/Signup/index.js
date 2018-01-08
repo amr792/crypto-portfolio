@@ -16,13 +16,13 @@ class Signup extends Component {
 		);
 	}
 }
-function mapStateToProps(state) {
-	return {};
-}
+
+const mapStateToDispatch = {
+	userSignupRequest
+};
 
 Signup.propTypes = {
 	userSignupRequest: PropTypes.func.isRequired
 };
 
-const mapDispatchToProps = {};
-export default connect(null, { userSignupRequest })(Signup);
+export default connect(null, mapStateToDispatch)(Signup);

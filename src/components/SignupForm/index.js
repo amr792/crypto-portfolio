@@ -18,6 +18,7 @@ class SignupForm extends React.Component {
 		this.setState({ [e.target.name]: e.target.value });
 	}
 	onSubmit(e) {
+		console.log('here!');
 		e.preventDefault();
 		this.props.userSignupRequest(this.state);
 	}
@@ -65,18 +66,21 @@ class SignupForm extends React.Component {
 						value={this.state.passwordConfirmation}
 						onChange={this.onChange}
 						type="password"
-						name="password confirmation"
+						name="passwordConfirmation"
 						className="form-control"
 					/>
 				</div>
 
 				<div className="form-group">
-					<button className="btn btn-primary btn-lg">SignUp</button>
+					<button className="btn btn-primary btn-lg" type="submit">
+						SignUp
+					</button>
 				</div>
 			</form>
 		);
 	}
 }
+
 SignupForm.propTypes = {
 	userSignupRequest: PropTypes.func.isRequired
 };
