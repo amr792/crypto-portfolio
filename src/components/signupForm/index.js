@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class SignupForm extends React.Component {
+class signupForm extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -81,7 +81,7 @@ class SignupForm extends React.Component {
 	}
 }
 
-SignupForm.propTypes = {
+signupForm.propTypes = {
 	userSignupRequest: PropTypes.func.isRequired
 };
 export default SignupForm;

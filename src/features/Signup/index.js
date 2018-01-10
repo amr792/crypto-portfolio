@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import SignupForm from '../../components/SignupForm';
+import SignupForm from '../../components/signupForm';
 import { userSignupRequest } from './signup.reducer';
 import PropTypes from 'prop-types';
 
